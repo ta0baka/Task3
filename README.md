@@ -11,8 +11,7 @@
 </p>
 
 ## Кнопка "Показать записи"
-При нажатии открывается второй экран, выводящий информацию из таблицы «Одногруппники» в удобном для восприятия
-формате.
+При нажатии открывается второй экран, выводящий информацию из таблицы «Одногруппники» в удобном для восприятия формате.
 При запуске приложение:
 1. Создает БД, если ее не существует.
 ```java
@@ -22,7 +21,7 @@
                     COLUMN_FULL_NAME + " TEXT NOT NULL, " +
                     COLUMN_TIMESTAMP + " TIME DEFAULT CURRENT_TIME" + ");";
 ```
-3. Создать таблицу «Одногруппники», содержащую поля:
+3. Создает таблицу «Одногруппники», содержащую поля:
 - ID;
 - ФИО;
 - Время добавления записи.
@@ -34,8 +33,7 @@ private static final String DATABASE_NAME = "group.db";
     public static final String COLUMN_FULL_NAME = "full_name";
     public static final String COLUMN_TIMESTAMP = "timestamp";
 ```
-5. Удалять все записи из БД, а затем вносить 5 записей об
-одногруппниках.
+5. Удаляет все записи из БД, а затем вносит 5 записей об одногруппниках.
 ```java
 private void initializeData(SQLiteDatabase db) {
         db.execSQL("DELETE FROM " + TABLE_NAME);
