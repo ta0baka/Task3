@@ -26,8 +26,6 @@
 - ФИО;
 - Время добавления записи.
 ```java
-private static final String DATABASE_NAME = "group.db";
-    private static final int DATABASE_VERSION = 1;
     public static final String TABLE_NAME = "groupmates";
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_FULL_NAME = "full_name";
